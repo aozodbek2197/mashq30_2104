@@ -1,0 +1,82 @@
+<!-- 1-mashq -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="time"></h2>
+
+<script>
+setInterval(()=>{
+    time.innerText = new Date().toLocaleTimeString();
+},1000);
+</script>
+
+</body>
+</html>
+<!-- 2-mashq -->
+<!DOCTYPE html>
+<html>
+<body style="height:2000px;">
+
+<button onclick="topFunc()">Top</button>
+
+<script>
+function topFunc(){
+    window.scrollTo({top:0, behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
+<!-- 3-mashq -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="t" value="Hello">
+<button onclick="copy()">Copy</button>
+
+<script>
+function copy(){
+    navigator.clipboard.writeText(t.value);
+}
+</script>
+
+</body>
+</html>
+<!-- 4-mashq -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="c">0</h2>
+<button onclick="inc()">+</button>
+
+<script>
+let i=0;
+function inc(){
+    c.innerText = ++i;
+}
+</script>
+
+</body>
+</html>
+<!-- 5-mashq -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="toggle()">Menu</button>
+
+<div id="menu" style="display:none;">
+  <p>Item 1</p>
+</div>
+
+<script>
+function toggle(){
+    menu.style.display = menu.style.display==="none"?"block":"none";
+}
+</script>
+
+</body>
+</html>
